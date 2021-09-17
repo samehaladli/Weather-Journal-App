@@ -15,7 +15,7 @@ document.getElementById('generate').addEventListener('click', async () => {
     alert("Tell us how are you feeling?")
   }
   try {
-    const mainURL = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}${apiKey}`
+    const mainURL = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}${apiKey}`
     const res = await fetch(mainURL)
     const data = await res.json()
     const temp = data.main.temp
