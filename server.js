@@ -15,11 +15,11 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static('website'));
 // Setup Server
-const port = 8000;
-const server = app.listen(port, listening);
-function listening() {
-    console.log(`Server is Running on localhost: ${port}`);
-};
+//const port = 8000;
+//const server = app.listen(port, listening);
+//function listening() {
+    //console.log(`Server is Running on localhost: ${port}`);
+//};
 // GET route
 app.get('/getWeather', function (req, res) {
     res.send(projectData);
